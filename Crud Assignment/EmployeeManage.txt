@@ -1,0 +1,28 @@
+import java.util.*;
+class EmployeeManage
+{
+	private int ArraySize;
+	private static Employee[] EmpArray=new Employee[ArraySize];
+	static Scanner s=new Scanner(System.in);
+	
+	public static void main(String[] a)
+	{
+		int choice;
+		ArraySize=s.nextInt();
+		do
+		{
+			System.out.println();
+			System.out.println("1. Create");
+			System.out.println("2. Udpate");
+			System.out.println("3. Search");
+			System.out.println("4. Display");
+			System.out.println("5. Delete");
+			System.out.println("0. Exit");
+			System.out.println();
+			
+			System.out.print("Enter your choice:");
+			choice = s.nextInt();
+			
+		}while(choice<6);
+	}
+}
